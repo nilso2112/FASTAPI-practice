@@ -49,7 +49,7 @@ app.version = "1.0"
 
 @app.get('/', tags=['Home'])
 def home():
-    return "Hola python!"
+    return "Hol python!"
 
 @app.get('/movies', tags=['Movies'])
 def get_movies() -> List[Movie]:
