@@ -10,7 +10,7 @@ create_tables()
 app = FastAPI()
 app.include_router(user.router)
 
-app.title = "Mi primera Chamba"
+app.title = "Mi primera API"
 app.version = "1.0"
            
 if __name__=="__main__":
