@@ -9,6 +9,9 @@ create_tables()
     
 app = FastAPI()
 app.include_router(user.router)
+
+app.title = "Mi primera Chamba"
+app.version = "1.0"
            
 if __name__=="__main__":
     uvicorn.run("main:app",port=8000,reload=True)
